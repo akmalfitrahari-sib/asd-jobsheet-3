@@ -4,7 +4,10 @@ public class Matakuliah03 {
     public int sks;
     public int jumlahJam;
 
-    public Matakuliah03 (String kode, String nama, int sks, int jumlahJam) {
+    public Matakuliah03 () {
+    }
+
+    public void tambahData (String kode, String nama, int sks, int jumlahJam) {
         this.kode = kode;
         this.nama = nama;
         this.sks = sks;
