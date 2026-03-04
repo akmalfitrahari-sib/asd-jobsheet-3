@@ -36,6 +36,19 @@ public class DataDosen03 {
                 jumlahWanita++;
             }
         }
+
+        double rataPria = 0;
+        double rataWanita = 0;
+
+        if (jumlahPria > 0) {
+            rataPria = (double) totalPria / jumlahPria;
+        }
+
+        if (jumlahWanita > 0) {
+            rataWanita = (double) totalWanita / jumlahWanita;
+        }
+        System.out.println("Rata-rata Usia Dosen Pria   : " + rataPria);
+        System.out.println("Rata-rata Usia Dosen Wanita : " + rataWanita);
     }
 
     public static void infoDosenPalingTua(Dosen03[] arrayOfDosen03) {
