@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class DosenDemo03 {
     public static void main(String[] args) {
-        
+    
     Scanner sc = new Scanner(System.in);
     Dosen03[] arrayOfDosen03 = new Dosen03[3];
 
@@ -20,9 +20,11 @@ public class DosenDemo03 {
             arrayOfDosen03[i] = new Dosen03(kode, nama, jenisKelamin, usia);
         }
 
-        for(int i =0; i < 3; i++) {
-            System.out.println("Data dosen ke-" + (i + 1));
-            arrayOfDosen03[i].cetakInfo();
-        }
+        DataDosen03 data = new DataDosen03();
+        data.dataSemuaDosen(arrayOfDosen03);
+        data.jumlahDosenPerJenisKelamin(arrayOfDosen03);
+        data.rerataUsiaDosenPerJenisKelamin(arrayOfDosen03);
+        data.infoDosenPalingTua(arrayOfDosen03);
+        data.infoDosenPalingMuda(arrayOfDosen03);
     }
 }
